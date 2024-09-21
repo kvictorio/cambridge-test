@@ -65,21 +65,21 @@ git --version
 ## **Running the application**
 
 You can run the application by using the batch or sh file included in the repository
-    - start.bat (for Windows)
-    - start.sh (for Linux/Unix/Mac)
+  - start.bat (for Windows)
+  - start.sh (for Linux/Unix/Mac)
 
 ## **CI/CD Pipeline**
 **Workflow Overview**
 This repository uses GitHub Actions to automate the following steps:
-    - Build and Test: When you push a commit to the dev branch, the pipeline builds the Docker image and runs tests to ensure the container works as expected.
-    - Create Pull Request: If all tests pass, a pull request is automatically created from dev to main, awaiting approval for merging.
+  - Build and Test: When you push a commit to the dev branch, the pipeline builds the Docker image and runs tests to ensure the container works as expected.
+  - Create Pull Request: If all tests pass, a pull request is automatically created from dev to main, awaiting approval for merging.
 
 **Pipeline Triggers**
-    - Push to Dev Branch: Any push to the dev branch triggers the CI/CD workflow.
-    - Manual Approval: After tests pass, the workflow automatically creates a pull request for merging the changes from dev into main.
+  - Push to Dev Branch: Any push to the dev branch triggers the CI/CD workflow.
+  - Manual Approval: After tests pass, the workflow automatically creates a pull request for merging the changes from dev into main.
 
 **GitHub Actions Permissions**
-    - There's also a requirement for the repository to "Allow GitHub Actions to create and approve pull requests"
+  - There's also a requirement for the repository to "Allow GitHub Actions to create and approve pull requests"
 
 ## **Updating the Application**
 
