@@ -1,0 +1,2 @@
+Flask==3.0.3
+watchdog==5.0.2
